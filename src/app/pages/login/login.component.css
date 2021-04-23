@@ -1,0 +1,14 @@
+#tool{
+    background-color: rgb(66, 68, 73);
+}
+.spacer{
+    flex: 1 1 auto;
+}
+.boton-tool{
+    color: rgb(117, 118, 119);
+}
+
+#tabla{
+    table-layout: center;
+    margin-top: 10;
+}
