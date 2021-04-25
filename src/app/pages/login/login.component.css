@@ -68,3 +68,6 @@
    /*change color of underline when focused*/
    background-color: black !important;;
   }
+.boton-tool:hover{
+  color: white;
+}
