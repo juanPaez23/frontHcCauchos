@@ -6,35 +6,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponenteComponent } from './pages/componente/componente.component';
-import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatInputModule} from '@angular/material/input';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InicioComponent } from './pages/inicio/inicio.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponenteComponent,
-    LoginComponent
+    LoginComponent,
+    InicioComponent
   ],
   imports: [
 
   BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    MaterialModule,
-    MatIconModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatMenuModule,
-    MatInputModule,
-    MatFormFieldModule,
-    FormsModule,
-    ReactiveFormsModule
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

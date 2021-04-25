@@ -1,0 +1,12 @@
+#tool{
+    background-color: rgb(54, 56, 61);
+}
+
+.spacer{
+    flex: 1 1 auto;
+}
+
+.boton-tool{
+    color: rgb(214, 196, 186);
+    cursor: pointer;
+}

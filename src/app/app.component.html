@@ -7,8 +7,25 @@
   <title>Document</title>
 </head>
 <body>
-  <div>
-    <app-login></app-login>
-  </div>
+  
+  <header>
+      <div>
+          <p>            
+              <mat-toolbar id="tool" class="mat-elevation-z8">
+                <img src="/assets/logo.png" width="50" height="50" Style="margin-left: 10px; margin-right: 10px;">
+                <span> HC CAUCHOS</span>
+                <span class="spacer"> </span>         
+                <button class="boton-tool" mat-button routerLink="/inicio">Inicio </button>
+                <button class="boton-tool" mat-button>Catalogo </button>
+                <button class="boton-tool" mat-button>Contactar </button>
+                <button class="boton-tool" mat-button routerLink="/login">Ingresar </button>
+                <button class="boton-tool" mat-button>Registrar </button>
+               </mat-toolbar>
+         </p>
+      </div>
+  </header>
+  <router-outlet></router-outlet>
+  
+  
 </body>
 </html>
