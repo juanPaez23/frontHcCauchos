@@ -7,20 +7,18 @@ mat-sidenav-container{
 .container-fluid{
     height: 100%;
 }
-.footer{
-    position: fixed;
-    display: grid;
-    background-color: white;
-    color: black;
-    bottom: 0;
-    width: 100%;
-}
-#contFooter{
-    height: 60px;
-    font-size: 20px;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #parrafo{
+    text-align: center;
+    position: fixed;
+    display: grid;
+    background-color: transparent;
+    color: black;
+    bottom: 0;
     margin-top: 17px;
     margin-left: 20px;
 }
