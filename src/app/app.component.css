@@ -6,6 +6,10 @@
     flex: 1 1 auto;
 }
 
+.active{
+    color: rgb(250, 231, 64) !important; 
+}
+
 .boton-tool{
     color: rgb(214, 196, 186);
     cursor: pointer;

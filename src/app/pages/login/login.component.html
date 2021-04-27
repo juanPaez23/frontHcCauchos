@@ -16,8 +16,8 @@
             <img src="/assets/logo.png" width="210" height="210" Style="margin-left: 10px; margin-right: 10px;">
             <br />
             <mat-form-field id="cuadroEmail">
-                <mat-label id="example-label">Email</mat-label>
-                <input type="email" matInput [formControl]="emailFormControl" placeholder="Ex. pat@example.com">
+                <mat-label id="example-label">Correo electrónico</mat-label>
+                <input type="email" matInput [formControl]="emailFormControl" placeholder="Ejemplo: correo@ejemplo.com">
                 <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
                     Please enter a valid email address
                 </mat-error>
@@ -28,7 +28,7 @@
             <br />
             <br />
             <mat-form-field id="cuadroPassword">
-                <mat-label id="example-label">Enter your password</mat-label>
+                <mat-label id="example-label">Ingresa tu contraseña</mat-label>
                 <input matInput [type]="hide ? 'password' : 'text'">
                 <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
                     [attr.aria-pressed]="hide">

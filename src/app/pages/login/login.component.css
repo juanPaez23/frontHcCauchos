@@ -24,6 +24,7 @@
     height: 40px;
 }
 
+
 #example-label{
     color: black;
     border: black;
@@ -36,6 +37,10 @@
     height: 40px;
     background-color: rgb(226, 236, 250);
     border-radius: 10px;
+    text-align: center;
+  }
+  ::placeholder{
+    color: rgb(100, 93, 93);
   }
 
   #cuadroPassword{
@@ -44,6 +49,7 @@
     height: 40px;
     background-color: rgb(226, 236, 250);
     border-radius: 10px; 
+    text-align: center;
   }
   
 ::ng-deep.mat-form-field-underline {
