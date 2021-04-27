@@ -1,0 +1,12 @@
+h1{
+    display:inline;
+}
+mat-icon{
+    cursor: pointer;
+}
+.mat-toolbar{
+    background: rgb(46, 133, 231);
+}
+.example-spacer {
+    flex: 1 1 auto;
+}

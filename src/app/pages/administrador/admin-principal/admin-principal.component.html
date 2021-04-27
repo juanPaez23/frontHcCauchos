@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <app-toolbar [inputSideNav]="sideNav"></app-toolbar>
+    <mat-sidenav-container>
+        <mat-sidenav #sideNav mode="side" opened>
+            <app-sidenav></app-sidenav>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <!--Aquí va el contenido de la página-->
+            <div id="titulo">
+                <h1>Bienvenido</h1>
+              </div>
+              <div id="tituloConfg">
+                <h2>Configuración</h2>
+              </div>
+              <footer class="footer">
+                <div id="contFooter">
+                    <p id="parrafo">
+                      <strong>Copyr &copy; 2020 <h1>Universidad De Cundinamarca</h1>.</strong> Todos Los Derechos Reservados.
+                    </p>
+                </div>
+              </footer>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

@@ -7,7 +7,9 @@ import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponenteComponent } from './pages/componente/componente.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
-
+import { AdminPrincipalComponent } from './pages/administrador/admin-principal/admin-principal.component';
+import { SidenavComponent } from './pages/administrador/sidenav/sidenav.component';
+import { ToolbarComponent } from './pages/administrador/toolbar/toolbar.component';
 
 
 @NgModule({
@@ -15,7 +17,10 @@ import { InicioComponent } from './pages/inicio/inicio.component';
     AppComponent,
     ComponenteComponent,
     LoginComponent,
-    InicioComponent
+    InicioComponent,
+    AdminPrincipalComponent,
+    SidenavComponent,
+    ToolbarComponent
   ],
   imports: [
 

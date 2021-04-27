@@ -1,0 +1,41 @@
+mat-sidenav-content{
+    background: white;
+}
+mat-sidenav-container{
+    height: 90%;
+}
+.container-fluid{
+    height: 100%;
+}
+.footer{
+    position: fixed;
+    display: grid;
+    background-color: white;
+    color: black;
+    bottom: 0;
+    width: 100%;
+}
+#contFooter{
+    height: 60px;
+    font-size: 20px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+#parrafo{
+    margin-top: 17px;
+    margin-left: 20px;
+}
+#parrafo h1{
+    display:inline;
+    color: rgb(46, 133, 231);
+}
+#titulo h1{
+    color: gray;
+    margin-top: 30px;
+    font-size: 40px;
+    margin-left: 20px;
+  }
+#tituloConfg h2{
+    color: gray;
+    margin-left: 20px;
+}
+  
