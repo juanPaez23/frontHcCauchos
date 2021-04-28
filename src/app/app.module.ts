@@ -10,6 +10,8 @@ import { AdminPrincipalComponent } from './pages/administrador/admin-principal/a
 import { SidenavComponent } from './pages/administrador/sidenav/sidenav.component';
 import { ToolbarComponent } from './pages/administrador/toolbar/toolbar.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { DatePickerComponent } from './pages/date-picker/date-picker.component';
+import { RegistroComponent } from './pages/registro/registro.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { ErrorComponent } from './pages/error/error.component';
     AdminPrincipalComponent,
     SidenavComponent,
     ToolbarComponent,
-    ErrorComponent
+    ErrorComponent,
+    DatePickerComponent,
+    RegistroComponent
   ],
   imports: [
 

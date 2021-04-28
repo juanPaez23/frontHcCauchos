@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="margin: 0px auto; text-align: center;">
+        <br />
+        <table id="tabla" class="mat-elevation-z8">
+            <img src="/assets/logo.png" width="210" height="210" Style="margin-left: 10px; margin-right: 10px;">
+            <br />
+            <br />
+            <h1>Registro</h1>
+            <br />
+            <p>
+                <mat-form-field id="cuadroTexto">
+                    <mat-label id="formField-label">Nombre(s)</mat-label>
+                    <input type="text" matInput [formControl]="textFormControl">
+                    <mat-error *ngIf="textFormControl.hasError('required')">
+                        <strong>Este campo es obligatorio</strong>
+                    </mat-error>
+                </mat-form-field>
+            </p>
+            <br />
+            <p>
+                <mat-form-field id="cuadroTexto">
+                    <mat-label id="formField-label">Apellido(s)</mat-label>
+                    <input type="text" matInput [formControl]="textFormControl">
+                    <mat-error *ngIf="textFormControl.hasError('required')">
+                        <strong>Este campo es obligatorio</strong>
+                    </mat-error>
+                </mat-form-field>
+            </p>
+            <br />
+            <p>
+                <mat-form-field id="cuadroTexto">
+                    <mat-label id="formField-label">Correo electrónico</mat-label>
+                    <input type="email" matInput [formControl]="emailFormControl"
+                        placeholder="Ejemplo: correo@ejemplo.com">
+                    <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                        Por favor ingresa un correo válido
+                    </mat-error>
+                    <mat-error *ngIf="emailFormControl.hasError('required')">
+                        <strong>Este campo es obligatorio</strong>
+                    </mat-error>
+                </mat-form-field>
+            </p>
+            <br />
+            <p>
+                <mat-form-field id="cuadroTexto">
+                    <mat-label id="formField-label">Contraseña</mat-label>
+                    <input matInput placeholder="New password" [type]="hide ? 'password' 
+                  : 'text'" [formControl]="passFormControl" required>
+                    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' :
+                        'visibility_off'}}</mat-icon>
+                    <mat-error *ngIf="passFormControl.hasError('required')">
+                        <strong>Por favor ingresa tu contraseña</strong>
+                    </mat-error>
+                </mat-form-field>
+            </p>
+            <br />
+            <p>
+                <mat-form-field id="cuadroTexto">
+                    <mat-label id="formField-label">Confirmar contraseña</mat-label>
+                    <input matInput [type]="hide ? 
+                      'password' : 'text'" [formControl]="confirmFormControl" required>
+                    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' :
+                        'visibility_off'}}</mat-icon>
+                    <mat-error *ngIf="confirmFormControl.hasError('required')">
+                        <strong>Por favor favor confirma tu contraseña</strong> 
+                    </mat-error>
+                </mat-form-field>
+            </p>
+            <br />
+            <p>
+                <mat-form-field id="cuadroTexto2" >
+                    <mat-label id="formField-label2">Tipo de documento</mat-label>
+                    <mat-select id="hola">
+                      <mat-option *ngFor="let numeroIdentificacion of tiposDocumento"  [value]="numeroIdentificacion.value" >
+                        {{numeroIdentificacion.viewValue}}
+                      </mat-option>
+                    </mat-select>
+                    <mat-error *ngIf="textFormControl.hasError('required')">
+                        <strong>Este campo es obligatorio</strong>
+                    </mat-error>
+                  </mat-form-field>
+            </p>
+            <br />
+            <p>
+                <mat-form-field id="cuadroTexto2">
+                    <mat-label id="formField-label2">Número de documento</mat-label>
+                    <input type="number" matInput [formControl]="textFormControl">
+                    <mat-error *ngIf="textFormControl.hasError('required')">
+                        <strong>Este campo es obligatorio</strong>
+                    </mat-error>
+                </mat-form-field>
+            </p>
+            <p>
+                <app-date-picker></app-date-picker>
+            </p>
+            <br />
+            <br />
+            <p>
+                <button id=botonRegistrar class="mat-elevation-z8">
+                    REGISTRAR</button>
+            </p>
+            <br />
+            <br />
+        </table>
+        <br />
+    </div>
+
+</body>
+
+</html>

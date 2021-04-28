@@ -1,0 +1,13 @@
+<br />
+<mat-form-field id="fecha" class="example-full-width">
+    <mat-label id="labelFecha" >Fecha Nacimiento</mat-label>
+    <input matInput [matDatepicker]="picker" [formControl]="textFormControl" placeholder="MM/DD/AAAA ">
+    <mat-datepicker-toggle matSuffix [for]="picker">
+      <mat-icon matDatepickerToggleIcon  style="color: rgb(27, 24, 24);">event_note</mat-icon>
+    </mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+    <mat-error *ngIf="textFormControl.hasError('required')">
+      <strong>Este campo es obligatorio</strong>
+ </mat-error>
+  </mat-form-field>
+<br />
