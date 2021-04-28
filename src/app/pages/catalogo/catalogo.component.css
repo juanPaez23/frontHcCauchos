@@ -1,0 +1,42 @@
+.card-card {
+    max-width: 250px;
+    background-color: #5a5a5a;
+  }
+  
+.headerCatalogo{
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #5a5a5a;
+}
+.titulo{
+  font-size: 4rem;
+  color: white;
+  font-weight: 500;
+  padding-top: 5%;
+}
+.subtitulo{
+  color: white;
+  font-weight: 500;
+  margin-top: 30px;
+}
+.opciones{
+  width: 200px;
+  height: 45px !important;
+  padding: 20px;
+}
+.filtrado{
+  padding-bottom: 10px;
+  font-size: 11px;
+}
+.contenidoCatalogo{
+  width: 100%;
+
+  padding-bottom: 40px;
+}
+.cartas{
+  padding: 2%;
+  display: inline-block;
+}
+
+

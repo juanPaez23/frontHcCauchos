@@ -1,0 +1,45 @@
+<div class="headerCatalogo" >
+    <h1 class="titulo">Catalogo</h1>
+    <h3 class="subtitulo">Nuestros Productos</h3>
+    <div class="filtrado" >
+        <mat-form-field class="opciones" appearance="fill">
+            <mat-label >Seleccione Categoria</mat-label>
+            <mat-select [(value)]="selectedFiltrado">
+              <mat-option></mat-option>
+              <mat-option [value]="option.value" *ngFor="let option of filtrado">{{ option.viewValue }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="opciones" appearance="fill">
+            <mat-label >Seleccione Marca</mat-label>
+            <mat-select [(value)]="selectedFiltrado">
+              <mat-option></mat-option>
+              <mat-option [value]="option.value" *ngFor="let option of filtrado">{{ option.viewValue }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="opciones" appearance="fill">
+            <mat-label >Ordenar por precio</mat-label>
+            <mat-select [(value)]="selectedFiltrado">
+              <mat-option></mat-option>
+              <mat-option [value]="option.value" *ngFor="let option of filtrado">{{ option.viewValue }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <button mat-raised-button color="primary">Buscar</button>
+    </div>
+</div>
+<div class="contenidoCatalogo">
+    <div class="cartas" *ngFor="let option of productos" >
+    <mat-card class="card-card">
+        <img mat-card-image src={{option.imagen}} >
+        <mat-card-content>
+        <mat-card-title>{{ option.producto }}</mat-card-title>
+        <p>Referencias: {{option.referencia}}</p>
+        <p>Precio: {{option.precio}}</p>
+        <p>Stock: {{option.stock}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button><mat-icon>add_shopping_cart</mat-icon> Agregar</button>
+          <button mat-button><mat-icon>remove_red_eye</mat-icon>Ver</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+</div>

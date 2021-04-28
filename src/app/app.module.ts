@@ -12,6 +12,7 @@ import { ToolbarComponent } from './pages/administrador/toolbar/toolbar.componen
 import { ErrorComponent } from './pages/error/error.component';
 import { DatePickerComponent } from './pages/date-picker/date-picker.component';
 import { RegistroComponent } from './pages/registro/registro.component';
+import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 
 
 @NgModule({
@@ -24,11 +25,11 @@ import { RegistroComponent } from './pages/registro/registro.component';
     ToolbarComponent,
     ErrorComponent,
     DatePickerComponent,
-    RegistroComponent
+    RegistroComponent,
+    CatalogoComponent
   ],
   imports: [
-
-  BrowserModule,
+    BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
     MaterialModule
