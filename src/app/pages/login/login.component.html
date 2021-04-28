@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title></title>
 </head>
 
 <body>
 
     <div style="margin: 0px auto; text-align: center;">
         <br />
-        <table id="tabla" class="mat-elevation-z8">
+        <table id="tabla" class="mat-elevation-z8" [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)" >
             <img src="/assets/logo.png" width="210" height="210" Style="margin-left: 10px; margin-right: 10px;">
             <br />
             <mat-form-field id="cuadroEmail">
                 <mat-label id="example-label">Correo electrónico</mat-label>
-                <input type="email" matInput [formControl]="emailFormControl" placeholder="Ejemplo: correo@ejemplo.com">
-                <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                <input type="email" matInput  placeholder="Ex. pat@example.com" formControlName="correo">
+                <mat-error *ngIf="loginForm.hasError('email') && !loginForm.hasError('required')">
                     Please enter a valid email address
                 </mat-error>
-                <mat-error *ngIf="emailFormControl.hasError('required')">
+                <mat-error *ngIf="loginForm.hasError('required')">
                     Email is <strong>required</strong>
                 </mat-error>
             </mat-form-field>
@@ -29,12 +29,23 @@
             <br />
             <mat-form-field id="cuadroPassword">
                 <mat-label id="example-label">Ingresa tu contraseña</mat-label>
-                <input matInput [type]="hide ? 'password' : 'text'">
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="clave">
                 <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
                     [attr.aria-pressed]="hide">
                     <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
                 </button>
             </mat-form-field>
+            <br />
+            <br />
+            <mat-form-field id="selectorRol" appearance="fill">                 
+                <mat-label id="example-label">Seleccione una opción</mat-label>                 
+                <mat-select id="example-label" disableRipple formControlName="aplicacionId" >                   
+                    <mat-option value="1">Administrador</mat-option>                   
+                    <mat-option value="2">Empleado</mat-option>                   
+                    <mat-option value="3">Domiciliario</mat-option>                   
+                    <mat-option value="4">Cliente</mat-option>                
+                 </mat-select>               
+                </mat-form-field>
             <br />
             <br />
             <button id=botonIngresar class="mat-elevation-z8">

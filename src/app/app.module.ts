@@ -13,6 +13,7 @@ import { ErrorComponent } from './pages/error/error.component';
 import { DatePickerComponent } from './pages/date-picker/date-picker.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { CatalogoComponent } from './pages/catalogo/catalogo.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { CatalogoComponent } from './pages/catalogo/catalogo.component';
     BrowserModule,
     AppRoutingModule,
     NoopAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
