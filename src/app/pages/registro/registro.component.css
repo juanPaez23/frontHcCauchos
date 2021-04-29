@@ -38,11 +38,7 @@
     border: black;
     
 }
-#formField-label2{
-  color: white !important;
-  border: black;
-  
-}
+
 
   #cuadroTexto{
     color: black !important;
@@ -53,14 +49,6 @@
     text-align: center;
   }
 
-  #cuadroTexto2{
-    color: white !important;
-    width: 400px;
-    height: 45px;
-    background-color: rgb(161, 163, 167);
-    border-radius: 10px;
-    text-align: center;
-  }
 
   ::placeholder{
     color: rgb(100, 93, 93);

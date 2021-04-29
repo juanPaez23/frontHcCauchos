@@ -44,7 +44,7 @@
                     <input type="email" matInput [formControl]="emailFormControl"
                         placeholder="Ejemplo: correo@ejemplo.com">
                     <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
-                        Por favor ingresa un correo válido
+                        <strong>Por favor ingresa un correo válido</strong>
                     </mat-error>
                     <mat-error *ngIf="emailFormControl.hasError('required')">
                         <strong>Este campo es obligatorio</strong>
@@ -55,46 +55,41 @@
             <p>
                 <mat-form-field id="cuadroTexto">
                     <mat-label id="formField-label">Contraseña</mat-label>
-                    <input matInput placeholder="New password" [type]="hide ? 'password' 
-                  : 'text'" [formControl]="passFormControl" required>
-                    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' :
-                        'visibility_off'}}</mat-icon>
+                    <input matInput [type]="hide ? 'password' 
+                  : 'text'" [formControl]="passFormControl" required [(ngModel)]="contrasena1"
+                        (input)="equalPasswordControl()">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
                     <mat-error *ngIf="passFormControl.hasError('required')">
                         <strong>Por favor ingresa tu contraseña</strong>
                     </mat-error>
+                    <mat-hint style="color: {{colorVar}};" align="center"> <strong>{{mensaje}}</strong></mat-hint>
                 </mat-form-field>
             </p>
             <br />
             <p>
                 <mat-form-field id="cuadroTexto">
                     <mat-label id="formField-label">Confirmar contraseña</mat-label>
-                    <input matInput [type]="hide ? 
-                      'password' : 'text'" [formControl]="confirmFormControl" required>
-                    <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' :
-                        'visibility_off'}}</mat-icon>
+                    <input matInput type="text" [type]="hide ? 
+                      'password' : 'text'" [formControl]="confirmFormControl" required [(ngModel)]="contrasena2"
+                        (input)="equalPasswordControl()">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
                     <mat-error *ngIf="confirmFormControl.hasError('required')">
-                        <strong>Por favor favor confirma tu contraseña</strong> 
+                        <strong>Por favor favor confirma tu contraseña</strong>
                     </mat-error>
+                    <mat-hint style="color: {{colorVar}};" align="center"> <strong>{{mensaje}}</strong></mat-hint>
+
                 </mat-form-field>
             </p>
             <br />
             <p>
-                <mat-form-field id="cuadroTexto2" >
-                    <mat-label id="formField-label2">Tipo de documento</mat-label>
-                    <mat-select id="hola">
-                      <mat-option *ngFor="let numeroIdentificacion of tiposDocumento"  [value]="numeroIdentificacion.value" >
-                        {{numeroIdentificacion.viewValue}}
-                      </mat-option>
-                    </mat-select>
-                    <mat-error *ngIf="textFormControl.hasError('required')">
-                        <strong>Este campo es obligatorio</strong>
-                    </mat-error>
-                  </mat-form-field>
-            </p>
-            <br />
-            <p>
-                <mat-form-field id="cuadroTexto2">
-                    <mat-label id="formField-label2">Número de documento</mat-label>
+                <mat-form-field id="cuadroTexto">
+                    <mat-label id="formField-label">Número de documento</mat-label>
                     <input type="number" matInput [formControl]="textFormControl">
                     <mat-error *ngIf="textFormControl.hasError('required')">
                         <strong>Este campo es obligatorio</strong>
