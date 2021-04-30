@@ -9,12 +9,12 @@ import { AdminPrincipalComponent } from './pages/administrador/admin-principal/a
 
 
 const routes: Routes = [
-  {path: '', component: InicioComponent},
   {path: 'login', component: LoginComponent},
   {path: 'inicio', component: InicioComponent},
   {path: 'registro', component: RegistroComponent},
   {path: 'catalogo', component: CatalogoComponent},
   {path: 'administrador', component: AdminPrincipalComponent},
+  {path: '', component: InicioComponent},
   {path: '**', component: ErrorComponent}
 ];
 
