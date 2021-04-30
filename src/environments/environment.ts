@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  Host: 'http://18.224.240.8/api',
+  HOST: 'http://18.224.240.8',
   HOST2: 'https://jsonplaceholder.typicode.com'
 };
 
