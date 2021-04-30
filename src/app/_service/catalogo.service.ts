@@ -12,7 +12,7 @@ import { Catalogo } from './../_model/catalogo';
 })
 export class CatalogoService {
 
-  url2:string = `${environment.HOST}/Usuario`;
+  url2:string = `${environment.HOST}/api/Usuario`;
 
   constructor(private http: HttpClient) { }
 
