@@ -11,7 +11,6 @@ import { SidenavComponent } from './pages/administrador/sidenav/sidenav.componen
 import { ToolbarComponent } from './pages/administrador/toolbar/toolbar.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { DatePickerComponent } from './pages/date-picker/date-picker.component';
-import { RegistroComponent } from './pages/registro/registro.component';
 import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TableComponent } from './pages/administrador/table/table.component';
@@ -28,7 +27,6 @@ import { PiePaginaComponent } from './pages/pie-pagina/pie-pagina.component';
     ToolbarComponent,
     ErrorComponent,
     DatePickerComponent,
-    RegistroComponent,
     CatalogoComponent,
     TableComponent,
     PiePaginaComponent
