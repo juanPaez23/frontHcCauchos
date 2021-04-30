@@ -13,8 +13,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatDatepickerModule} from '@angular/material/datepicker';
-import {MatNativeDateModule} from '@angular/material/core';
-import {MatSelectModule} from '@angular/material/select';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
+import {CdkTableModule} from '@angular/cdk/table';
 
 @NgModule({
   declarations: [],
@@ -34,7 +35,9 @@ import {MatSelectModule} from '@angular/material/select';
     MatBadgeModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatSelectModule
+    MatSelectModule,
+    CdkTableModule,
+    
   ],
   exports: [
     MatIconModule,
@@ -51,7 +54,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatBadgeModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatSelectModule
+    MatSelectModule,
+    CdkTableModule
   ]
 })
 export class MaterialModule { }

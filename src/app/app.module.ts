@@ -14,6 +14,7 @@ import { DatePickerComponent } from './pages/date-picker/date-picker.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TableComponent } from './pages/administrador/table/table.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     ErrorComponent,
     DatePickerComponent,
     RegistroComponent,
-    CatalogoComponent
+    CatalogoComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,

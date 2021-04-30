@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./admin-principal.component.css']
 })
 export class AdminPrincipalComponent implements OnInit {
-
+  tabla: boolean;
   constructor() { }
 
   ngOnInit(): void {

@@ -5,6 +5,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { CatalogoComponent } from './pages/catalogo/catalogo.component';
+import { AdminPrincipalComponent } from './pages/administrador/admin-principal/admin-principal.component';
 
 
 const routes: Routes = [
@@ -13,12 +14,12 @@ const routes: Routes = [
   {path: 'inicio', component: InicioComponent},
   {path: 'registro', component: RegistroComponent},
   {path: 'catalogo', component: CatalogoComponent},
+  {path: 'administrador', component: AdminPrincipalComponent},
   {path: '**', component: ErrorComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-
 
 exports: [RouterModule]
 })

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AdminPrincipalComponent } from '../admin-principal/admin-principal.component';
 
 @Component({
   selector: 'app-sidenav',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidenavComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private estado: AdminPrincipalComponent
+  ) { }
 
   ngOnInit(): void {
+  }
+
+  mostrarTabla(){
+    this.estado.tabla = true;
   }
 
 }
