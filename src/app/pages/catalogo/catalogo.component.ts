@@ -1,17 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { Catalogo } from './../../_model/catalogo';
+import { CatalogoService } from '../../_service/catalogo.service';
 
 interface Filtrado {
   value: string;
   viewValue: string;
 }
 
-interface Productos{
-  imagen: string;
-  producto: string;
-  referencia: string;
-  precio: number;
-  stock: number;
-}
 
 @Component({
   selector: 'app-catalogo',
@@ -20,16 +15,21 @@ interface Productos{
 })
 export class CatalogoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api: CatalogoService) { }
 
   ngOnInit(): void {
+    this.cargarProductos();
   }
+  productos : Catalogo[];
+  cargarProductos(){
+  this.api.obtenerProductos().subscribe(
+    data => {
+      this.productos = data;
+      console.log(data);
+    },
+  );
 
-  productos: Productos[]=[
-    {imagen: 'https://http2.mlstatic.com/D_NQ_NP_2X_692672-MCO43298125053_082020-F.webp',producto: 'moto',referencia: '121121',precio: 80000,stock: 2},
-    {imagen: 'https://http2.mlstatic.com/D_NQ_NP_623575-MCO41888189647_052020-O.webp',producto: 'moto',referencia: '121121',precio: 80000,stock: 2},
-    {imagen: 'https://http2.mlstatic.com/D_NQ_NP_930964-MCO43876335471_102020-O.webp',producto: 'moto',referencia: '121121',precio: 80000,stock: 2}
-  ]
+  }
    
   filtrado: Filtrado[] = [
     {value: 'steak-0', viewValue: 'Steak'},

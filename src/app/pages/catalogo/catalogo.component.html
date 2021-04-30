@@ -29,12 +29,13 @@
 <div class="contenidoCatalogo">
     <div class="cartas" *ngFor="let option of productos" >
     <mat-card class="card-card">
-        <img mat-card-image src={{option.imagen}} >
+        <!--<img mat-card-image src={{option.imagen}} >-->
+        <img mat-card-image src="/assets/ima/default.jpg" >
         <mat-card-content>
-        <mat-card-title>{{ option.producto }}</mat-card-title>
+        <mat-card-title>{{ option.titulo }}</mat-card-title>
         <p>Referencias: {{option.referencia}}</p>
         <p>Precio: {{option.precio}}</p>
-        <p>Stock: {{option.stock}}</p>
+        <p>Stock: {{option.ca_actual}}</p>
         </mat-card-content>
         <mat-card-actions>
           <button mat-button><mat-icon>add_shopping_cart</mat-icon> Agregar</button>
