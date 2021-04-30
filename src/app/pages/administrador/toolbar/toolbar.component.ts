@@ -26,8 +26,8 @@ import { AppComponent } from './../../../app.component';
  */
 export class ToolbarComponent implements OnInit {
   /**
-   * Método de la clase "Input" que permite heredar 
-   * las características del componente "MatSideNav".
+   * Variable de tipo "MatSidenav", la cuál, hace uso
+   * de la clase "Input" para usar los conceptos de la misma.
    */
   @Input() inputSideNav: MatSidenav;
   /**
