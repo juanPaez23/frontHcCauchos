@@ -17,6 +17,7 @@ export class SidenavComponent implements OnInit {
 
   mostrarTabla(){
     this.estado.tabla = true;
+    this.estado.bienvenida = false;
   }
 
 }

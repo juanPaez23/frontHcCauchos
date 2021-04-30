@@ -3,7 +3,6 @@ import { MatSort } from '@angular/material/sort';
 import { Empleado } from '../../../_model/Empleado';
 import { MatTableDataSource } from '@angular/material/table';
 import { EmpleadoService } from './../../../_service/empleado-service/empleado.service';
-import {DataSource} from '@angular/cdk/collections';
 
 @Component({
   selector: 'app-table',
