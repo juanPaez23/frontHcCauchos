@@ -5,10 +5,11 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { ErrorComponent } from './pages/error/error.component';
 import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 import { AdminPrincipalComponent } from './pages/administrador/admin-principal/admin-principal.component';
-
+import { RegistroComponent } from './pages/registro/registro.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
+  {path: 'registro', component: RegistroComponent},
   {path: 'inicio', component: InicioComponent},
   {path: 'catalogo', component: CatalogoComponent},
   {path: 'administrador', component: AdminPrincipalComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
+
 
 exports: [RouterModule]
 })
