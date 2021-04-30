@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './admin-principal.component.html',
   styleUrls: ['./admin-principal.component.css']
 })
+
 export class AdminPrincipalComponent implements OnInit {
   tabla: boolean;
   bienvenida: boolean = true;
