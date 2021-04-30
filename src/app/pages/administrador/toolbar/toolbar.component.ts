@@ -1,3 +1,6 @@
+
+import { environment } from './../../../../environments/environment';
+
 import { Component, Input, OnInit } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 
@@ -12,5 +15,12 @@ export class ToolbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  logout() {
+    sessionStorage.removeItem(environment.TOKEN);
+  }
 
+  public get logIn(): boolean {
+    return (localStorage.getItem(environment.TOKEN) !== null);
+  }
 }

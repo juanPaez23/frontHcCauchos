@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   HOST: 'http://18.224.240.8',
-  HOST2: 'https://jsonplaceholder.typicode.com'
+  HOST2: 'https://jsonplaceholder.typicode.com',
+  TOKEN: "acceso"
 };
 
 /*

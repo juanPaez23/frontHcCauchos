@@ -8,7 +8,7 @@ import { Empleado } from '../../_model/Empleado';
 })
 export class EmpleadoService {
 
-private url: string = `${environment.HOST}/api/Admin/ListarEmpleados`;
+private url: string = `${environment.HOST}api/Admin/ListarEmpleados`;
 
   constructor( private http: HttpClient) { }
 

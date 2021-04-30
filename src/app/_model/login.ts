@@ -1,5 +1,5 @@
 export class Login{
-    correo:string;
+    correo:String;
     clave:String;
     aplicacionId:number;
 }

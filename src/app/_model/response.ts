@@ -1,4 +1,4 @@
-export class Reponse{
-    status:string;
-    response:string;
+export interface Reponse{
+    status:String;
+    result:String;
 }
