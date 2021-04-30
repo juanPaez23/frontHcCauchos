@@ -23,7 +23,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 /**
- * Declaración e importación de las librerias
+ * Importación y exportación de las dependencias usadas.
  */
 @NgModule({
   declarations: [],

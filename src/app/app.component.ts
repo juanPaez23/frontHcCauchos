@@ -16,9 +16,20 @@ import { Component } from '@angular/core';
  * @version 1.8.2
  */
 export class AppComponent {
+  /**
+   * Título de la plataforma web
+   */
   title = 'hcCauchos';
+  /**
+   * Contiene un valor (boolean) que describe
+   * la visibilidad del toolBar principal.
+   */
   estadoToolBar: boolean = true;
 
+  /**
+   * Método que cambia el estado
+   * del toolBar principal.
+   */
   ocultarToolBar():void{
     this.estadoToolBar = false;
   }
