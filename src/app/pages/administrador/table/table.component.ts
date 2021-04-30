@@ -10,7 +10,7 @@ import { EmpleadoService } from './../../../_service/empleado-service/empleado.s
   styleUrls: ['./table.component.css']
 })
 export class TableComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'name', 'username', 'email', 'events'];
+  displayedColumns: string[] = ['id', 'nombre', 'apellido', 'correo', 'events'];
   dataSource = new MatTableDataSource<Empleado>();
 
   @ViewChild(MatSort) sort: MatSort;
