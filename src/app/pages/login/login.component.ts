@@ -14,9 +14,22 @@ import { AppComponent } from './../../app.component';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
+
+/**
+ * Clase encargada de logiar al usuario
+ * @autor César Téllez
+ * @autor Juan Páez
+ * @autor Eison Morales
+ * @autor Diego Cobos
+ * @autor Carlos Urquiza
+ * @since 1.0.0
+ * @version 1.8.2
+ */
 export class LoginComponent implements OnInit {
 
-  
+  /**
+   *  Guardan los atributos correo, clave y aplicacionId que ingresa el usuario
+   */
   loginForm = new FormGroup({
     correo: new FormControl('', [
       Validators.required,
@@ -28,7 +41,13 @@ export class LoginComponent implements OnInit {
 
 
   hide = true;
-  constructor(private api: ConsultaService, private router: Router, private snackBar: MatSnackBar,
+/**
+ * Costrcutor de la clase "loginComponent"
+ * @param apiLogin colsulta el post para el login
+ * @param router redireciona al usuiario
+ * @param snackBar muestar error capturado
+ */
+  constructor(private apiLogin: ConsultaService, private router: Router, private snackBar: MatSnackBar,
     ) {
   }
 
@@ -36,9 +55,16 @@ export class LoginComponent implements OnInit {
     
   }
   
+
+  /**
+   * fucion encargda de guardar el token y capturarlos errores en el login 
+   * 
+   */
+
+
   onLogin(form:Login) {
     
-    this.api.login(form).subscribe(data => {
+    this.apiLogin.login(form).subscribe(data => {
 
         sessionStorage.setItem(environment.TOKEN, data );
         const helper = new JwtHelperService();
