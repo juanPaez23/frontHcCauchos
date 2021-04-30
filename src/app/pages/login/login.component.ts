@@ -6,6 +6,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ConsultaService } from '../../_service/consulta.service'
 import { Router } from '@angular/router';
 import { JwtHelperService   } from "@auth0/angular-jwt";
+import { AppComponent } from './../../app.component';
 
 
 @Component({
@@ -27,10 +28,12 @@ export class LoginComponent implements OnInit {
 
 
   hide = true;
-  constructor(private api: ConsultaService, private router: Router, private snackBar: MatSnackBar) {
+  constructor(private api: ConsultaService, private router: Router, private snackBar: MatSnackBar,
+    ) {
   }
 
   ngOnInit(): void {
+    
   }
   
   onLogin(form:Login) {

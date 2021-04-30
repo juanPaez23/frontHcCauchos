@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppComponent } from './../../../app.component';
 
 @Component({
   selector: 'app-admin-principal',
@@ -9,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 export class AdminPrincipalComponent implements OnInit {
   tabla: boolean;
   bienvenida: boolean = true;
-  constructor() { }
+  constructor(
+    private estado: AppComponent
+  ) { }
 
   ngOnInit(): void {
+    this.estado.estadoToolBar = false;
   }
 
 }

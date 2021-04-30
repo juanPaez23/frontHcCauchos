@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hcCauchos';
+  estadoToolBar: boolean = true;
+
+  ocultarToolBar():void{
+    this.estadoToolBar = false;
+  }
 }
