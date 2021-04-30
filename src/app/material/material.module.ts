@@ -39,7 +39,6 @@ import { MatSortModule } from '@angular/material/sort';
     MatSelectModule,
     MatTableModule,
     MatSortModule
-    
   ],
   exports: [
     MatIconModule,

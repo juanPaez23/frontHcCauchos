@@ -4,6 +4,9 @@ h1{
 mat-icon{
     cursor: pointer;
 }
+.active{
+    color: rgb(250, 231, 64) !important; 
+}
 .mat-toolbar{
     background: rgb(46, 133, 231);
 }
