@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminPrincipalComponent implements OnInit {
   tabla: boolean;
+  bienvenida: boolean = true;
   constructor() { }
 
   ngOnInit(): void {

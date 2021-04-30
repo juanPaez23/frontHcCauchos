@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 })
 export class ConsultaService {
 
-  url2:string = `${environment.Host}/login`;
+  url2:string = `${environment.HOST}/login`;
 
   constructor(private http: HttpClient) { }
 
