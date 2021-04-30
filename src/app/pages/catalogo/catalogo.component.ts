@@ -7,6 +7,16 @@ interface Filtrado {
   viewValue: string;
 }
 
+/**
+ * Clase del componente principal (Catalogo)
+ * @autor César Téllez
+ * @autor Juan Páez
+ * @autor Eison Morales
+ * @autor Diego Cobos
+ * @autor Carlos Urquiza
+ * @since 1.0.0
+ * @version 1.8.2
+ */
 
 @Component({
   selector: 'app-catalogo',
@@ -15,6 +25,10 @@ interface Filtrado {
 })
 export class CatalogoComponent implements OnInit {
 
+ /**
+  * 
+  * @param api
+  */
   constructor(private api: CatalogoService) { }
 
   ngOnInit(): void {

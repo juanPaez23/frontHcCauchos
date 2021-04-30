@@ -1,3 +1,14 @@
+/**
+ * Caracteristicas(json) de la petición del Catalogo
+ * @autor César Téllez
+ * @autor Juan Páez
+ * @autor Eison Morales
+ * @autor Diego Cobos
+ * @autor Carlos Urquiza
+ * @since 1.0.0
+ * @version 1.8.2
+ */
+
 export class Catalogo{
     id:number;
     imagen: string;

@@ -1,3 +1,6 @@
+/**
+ * Importación de libreria en los componentes de material angular
+ */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
@@ -19,7 +22,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
-
+/**
+ * Importación y exportación de las dependencias usadas.
+ */
 @NgModule({
   declarations: [],
   imports: [
