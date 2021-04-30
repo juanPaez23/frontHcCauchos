@@ -15,6 +15,7 @@ import { RegistroComponent } from './pages/registro/registro.component';
 import { CatalogoComponent } from './pages/catalogo/catalogo.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TableComponent } from './pages/administrador/table/table.component';
+import { PiePaginaComponent } from './pages/pie-pagina/pie-pagina.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { TableComponent } from './pages/administrador/table/table.component';
     DatePickerComponent,
     RegistroComponent,
     CatalogoComponent,
-    TableComponent
+    TableComponent,
+    PiePaginaComponent
   ],
   imports: [
     BrowserModule,
