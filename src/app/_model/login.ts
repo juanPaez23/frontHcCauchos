@@ -1,5 +1,5 @@
 /**
- * Clase que componente plos atributos del objeto de login 
+ * Clase componente los atributos del objeto de login 
  * @autor César Téllez
  * @autor Juan Páez
  * @autor Eison Morales
